@@ -47,7 +47,7 @@ deleteTodoHandler conn = do
 serveR :: ActionM ()
 serveR = do
   setHeader "content-type" "text"
-  file "/Users/folaoyewole/Haskell/todo-app/src/output.css"
+  file "./src/output.css"
   
 core :: Connection -> IO ()
 core conn = scotty 5000 $ do

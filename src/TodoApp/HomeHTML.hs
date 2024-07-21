@@ -19,7 +19,7 @@ page :: [Todo] -> Html ()
 page todoList = do
   html_ $ do
     head_ $ do
-      link_ [href_ "./../output.css" , rel_ "stylesheet"]
+      link_ [href_ "output.css" , rel_ "stylesheet"]
     body_  $ do
       div_ [class_ "m-auto w-1/2 mt-10 bg-gray-300 p-5 rounded md:w-[350px] lg:w-[500px]"] $ do
         h2_ [class_ "text-center text-xl font-bold"] "TodoApp"
