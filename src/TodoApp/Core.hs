@@ -26,8 +26,9 @@ addTodoHandler conn = do
     let result = execute conn "INSERT INTO todo_list (description) VALUES (?)" (Only todoItem)
     n <- liftIO result
     if n > 0
-    then
-      redirect "/"
+    then do
+      todoList <- (liftIO $ query_ conn "select * from todo_list") :: ActionM [Todo]
+      html $ renderText(todoResults todoList )
     else
      text "error occurred"
   else
