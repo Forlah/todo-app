@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="m-auto w-1/2 mt-10 bg-gray-300 p-5 rounded md:w-[350px] lg:w-[500px]">
+        <h2 class="text-center text-xl font-bold">TodoApp</h2>
+        <div class="p-3">
+            <form class="h-20" action="/addTodo" method="POST"><input class="rounded h-8 px-2 w-full" type="text"
+                    name="todo_item" placeholder="Enter a todo item"><input
+                    class="bg-green-700 text-white h-8 w-full mt-6" type="submit" value="Add todo"></form>
+        </div>
+        <div class>
+            <ul class="space-y-2">
+                <li class="bg-white p-2 shadow-md rounded">
+                    <div class="space-x-3 flex justify-between"><span class=" text-black text-[13px] font-medium">Check tyre
+                            pressure</span><a href="/delete/32"
+                            class="bg-red-500 text-xs text-white my-auto p-1 rounded">Remove</a></div>
+                </li>
+                <li class="bg-white p-2 shadow-md rounded">
+                    <div class="space-x-3 flex justify-between"><span class="text-black">Sweep the foyer</span><a
+                            href="/delete/33" class="bg-red-500 text-xs text-white my-auto p-1 rounded">Delete</a></div>
+                </li>
+                <li class="bg-white p-2 shadow-md rounded">
+                    <div class="space-x-3 flex justify-between"><span class="text-black">Go to the pool</span><a
+                            href="/delete/34" class="bg-red-500 text-xs text-white my-auto p-1 rounded">Delete</a></div>
+                </li>
+                <li class="bg-white p-2 shadow-md rounded">
+                    <div class="space-x-3 flex justify-between"><span class="text-black">Going to the
+                            supermarket</span><a href="/delete/35"
+                            class="bg-red-500 text-xs text-white my-auto p-1 rounded">Delete</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
